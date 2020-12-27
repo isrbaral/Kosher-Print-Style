@@ -7,9 +7,7 @@ javascript: (function() {
     else{
     document.getElementsByTagName('header')[0].setAttribute('style','background-color:#fff');
     let css = document.styleSheets[2];
-    css.insertRule('.print { font-size: 14pt !important}');
-    css.insertRule('.recipe-print__directions ol>li {line-height: 18px !important}');
-    css.insertRule('.recipe-print__callout-meta-description {line-height: 18px !important}');
+    css.insertRule('.print{font-size:14pt!important}','.recipe-print__directions ol>li{line-height:18px!important}','.recipe-print__callout-meta-description{line-height:18px!important}');
     let use = document.getElementsByTagName("use");
     for (let i in use) {
         use[i].setAttribute("fill", "#000");
