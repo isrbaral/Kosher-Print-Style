@@ -5,7 +5,12 @@ javascript: (function() {
     }
     else{
         document.getElementsByTagName('header')[0].setAttribute('style','background-color:#fff');
-        document.styleSheets[2].insertRule('.print{font-size:14pt!important}','.recipe-print__directions ol>li{line-height:1.2!important}','.recipe-print__callout-meta-description{line-height:1.2!important}');
+        let css = document.styleSheets[2];
+        css.insertRule('.print{font-size:14pt!important}'),
+        css.insertRule('.recipe-print__directions ol>li{line-height:1.2!important}'),
+        css.insertRule('.recipe-print__callout-meta-description{line-height:1.2!important}'),
+        css.insertRule('.recipe-print__callout-meta-container::before{font-size:0!important;}'),
+        css.insertRule('.recipe-print__callout{font-size:9pt!important}');
         let use = document.getElementsByTagName("use");
         for (let i in use) {
             use[i].setAttribute("fill", "#000");
