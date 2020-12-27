@@ -1,0 +1,3 @@
+<p>
+	<a href="javascript:(function(){d=window.location.pathname;e=/\d{2,}/g;f=d.match(e);b='https://www.kosher.com/recipe/print/'+f;if(window.location.href!=b)window.open(b,'_blank');else{document.getElementsByTagName('header')[0].setAttribute('style','background-color:#fff');a=document.styleSheets[2];a.insertRule('.print{font-size:14pt!important}','.recipe-print__directions ol>li{line-height:18px!important}','.recipe-print__callout-meta-description{line-height:18px!important}');c=document.getElementsByTagName('use');for(g in c)c[g].setAttribute('fill','#000');}})()">Bookmarklet</a>
+</p>
