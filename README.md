@@ -3,6 +3,7 @@
 Fixed up some of the more annoying parts of the kosher.com print style making it more readable once printed.
 
 To add to your browser:
+### Chrome / Edge
 * Copy this by triple clicking in the box and typing `[CTRL] + [C]`:
 ```javascript
 javascript:(function(){d=window.location.pathname;e=/\d{2,}/g;f=d.match(e);b='https://www.kosher.com/recipe/print/'+f;if(window.location.href!=b)window.open(b,'_blank');else{document.getElementsByTagName('header')[0].setAttribute('style','background-color:#fff');a=document.styleSheets[2];a.insertRule('.print{font-size:14pt !important}'),a.insertRule('.recipe-print__directions ol>li {line-height:18px !important}'),a.insertRule('.recipe-print__callout-meta-description {line-height:18px !important}');c=document.getElementsByTagName('use');for(g in c)c[g].setAttribute('fill','#000');}})()
