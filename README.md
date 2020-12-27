@@ -2,6 +2,7 @@
 
 Fixed up some of the more annoying parts of the kosher.com print style making it more readable once printed.
 
+## Chrome / Edge
 To add to your browser:
 * Copy this by triple clicking in the box and typing `[CTRL] + [C]`:
 ```javascript
