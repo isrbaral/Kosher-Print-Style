@@ -13,7 +13,7 @@ javascript: (function() {
         css.insertRule('.recipe-print__callout{font-size:9pt!important}');
         let use = document.getElementsByTagName("use");
         for (let i=0;i<use.length;i++) {
-            use[i].setAttribute("fill","#000");
+            use[i].setAttribute("fill","#7a087a");
         };
         window.print();
     }
