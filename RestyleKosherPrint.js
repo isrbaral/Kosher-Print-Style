@@ -12,8 +12,9 @@ javascript: (function() {
         css.insertRule('.recipe-print__callout-meta-container::before{font-size:0!important;}'),
         css.insertRule('.recipe-print__callout{font-size:9pt!important}');
         let use = document.getElementsByTagName("use");
-        for (let i in use) {
-            use[i].setAttribute("fill", "#000");
+        for (let i=0;i<use.length;i++) {
+            use[i].setAttribute("fill","#000");
         };
+        window.print();
     }
 })()
